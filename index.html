@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+<body>
+
+ <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand fw-bolder" href="#"><i class="fa-solid fa-cloud-bolt "></i>Weather  <i class="fa-solid fa-wind"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+            <div class="navbar-nav  ">
+              <a class="nav-link btn btn-outline-secondary m-2 rounded-4 active" aria-current="page" href="#">Home</a>
+              <a class="nav-link btn btn-outline-secondary m-2 rounded-4" href="#">News</a>
+              <a class="nav-link btn btn-outline-secondary m-2 rounded-4" href="#">Live Cameras</a>
+              <a class="nav-link btn btn-outline-secondary m-2 rounded-4" href="#">Contacts </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+ <!-- Home -->
+  <section>
+    <div class="container home">
+        <div class="searchBox form-floating m-3 position-relative ">
+            <input type="text" class="form-control rounded-3 citySearch " id="floatingInput" placeholder="Ex:Cairo">
+            <label for="floatingInput">Search With Your City</label>
+            <button  class="btn btn-secondary m-2 position-absolute" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </div>
+
+        <div class="forecast m-5" id="forecast">
+          <div id="data" class="row  ">
+
+            
+      
+
+          </div>
+        </div>
+        
+
+    
+    </div>
+  </section>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>
